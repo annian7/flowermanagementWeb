@@ -3,12 +3,6 @@ layui.use(['form','layer','jquery'],function(){
         layer = parent.layer === undefined ? layui.layer : top.layer
         $ = layui.jquery;
 
-    $(".loginBody .seraph").click(function(){
-        layer.msg("这只是做个样式，至于功能，你见过哪个后台能这样登录的？还是老老实实的找管理员去注册吧",{
-            time:5000
-        });
-    })
-
     //登录按钮
     form.on("submit(login)",function(data){
         var articleFrom = data.field;
@@ -18,16 +12,14 @@ layui.use(['form','layer','jquery'],function(){
             return false;
         }
         if(articleFrom.identity==1){
-            identity = "student";
+            identity = "EmployeeController";
         }else if(articleFrom.identity==2){
-            identity = "teacher";
-        }else{
-            identity = "admin";
+            identity = "manager";
         }
 
         $.ajax({
             type:"GET",
-           url:"http://localhost:8080/ScoreManagement_war_exploded/"+identity+"/login.action",
+           url:"http://localhost:9000/web/"+identity+"/login",
             
             data:{
                 "id":articleFrom.id,
@@ -35,7 +27,6 @@ layui.use(['form','layer','jquery'],function(){
             },
             dataType:"JSON",
             success:function(data) {
-                
                 if(data.success=="false"){
                     layer.msg("用户名或密码错误",{time:1000});
                 }else if(data.success=="ok"){

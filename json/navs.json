@@ -1,51 +1,42 @@
 {
-	"contentManagement": [
+	"managerManagement": [
 		{
-			"title": "查看成绩",
+			"title": "库存管理",
 			"icon": "icon-text",
-			"href": "page/grade/scoreList.html",
+			"href": "page/repertory/repertoryList.html",
 			"spread": false
 		},
 		{
-			"title": "填报成绩",
+			"title": "订单管理",
 			"icon": "&#xe634;",
-			"href": "page/grade/classList.html",
-			"spread": false
-		}
-	],
-	"adminManagement": [
-		{
-			"title": "查看成绩",
-			"icon": "icon-text",
-			"href": "page/grade/scoreList.html",
+			"href": "page/order/orderList.html",
 			"spread": false
 		},
 		{
-			"title": "修改成绩",
-			"icon": "icon-text",
-			"href": "page/grade/modifyScore.html",
-			"spread": false
-		}
-	],
-	"studentManagement": [
-		{
-			"title": "查看成绩",
-			"icon": "icon-text",
-			"href": "page/grade/studentScore.html",
-			"spread": false
-		}
-	],
-	"memberCenter": [
-		{
-			"title": "教师管理",
-			"icon": "&#xe612;",
-			"href": "page/user/userList.html",
+			"title": "员工管理",
+			"icon": "&#xe636;",
+			"href": "page/employee/empList.html",
 			"spread": false
 		},
 		{
-			"title": "学生管理",
-			"icon": "&#xe612;",
-			"href": "page/user/teacherList.html",
+			"title": "店铺管理",
+			"icon": "&#xe610;",
+			"href": "page/shop/shopList.html",
+			"spread": false
+		}
+	],
+	
+	"empManagement": [
+		{
+			"title": "库存管理",
+			"icon": "icon-text",
+			"href": "page/repertory/repertoryList.html",
+			"spread": false
+		},
+		{
+			"title": "订单管理",
+			"icon": "&#xe634;",
+			"href": "page/order/orderList.html",
 			"spread": false
 		}
 	]

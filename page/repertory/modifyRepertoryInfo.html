@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>商品信息</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="../../css/public.css" media="all" />
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body class="childrenBody" >
+<form class="layui-form layui-row">
+	<div class="layui-col-md6 layui-col-xs12">
+		<div class="layui-form-item">
+			
+			<div class="layui-input-block">
+				<input type="hidden"  disabled class="layui-input layui-disabled id">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">店铺</label>
+			<div class="layui-input-block">
+				<input type="text"  disabled class="layui-input layui-disabled shop">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">商品名</label>
+			<div class="layui-input-block">
+				<input type="text"  placeholder="请输入商品名称"  lay-verify="required" class="layui-input name">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">总数量</label>
+			<div class="layui-input-block">
+				<input type="tel" placeholder="请输入总数量" lay-verify="quantity" class="layui-input quantity">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">剩余数量</label>
+			<div class="layui-input-block">
+				<input type="tel" placeholder="请输入剩余数量" lay-verify="surplus" class="layui-input surplus">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">单价</label>
+			<div class="layui-input-block">
+				<input type="tel" placeholder="请输入单价" lay-verify="price" class="layui-input price">
+			</div>
+		</div>
+		
+		<div class="layui-form-item">
+			<div class="layui-input-block">
+				<button class="layui-btn" lay-submit="" lay-filter="changeUser">立即提交</button>
+			</div>
+		</div>
+	</div>
+</form>
+<script type="text/javascript" src="../../layui/layui.js"></script>
+<script type="text/javascript" src="repertoryInfo.js"></script>
+<script type="text/javascript" src="../../js/cacheUserInfo.js"></script>
+</body>
+</html>

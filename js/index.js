@@ -28,13 +28,10 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
 		$.getJSON(tab.tabConfig.url,function(data){
 			if(json == "contentManagement"){
 				var identity = sessionStorage.getItem("identity");
-				// alert(identity);
-				if(identity==3){
-					dataStr = data.adminManagement;
-				}else if(identity==1){
-					dataStr = data.studentManagement;
+				if(identity==1){
+					dataStr = data.empManagement;
 				}else{ 
-					dataStr = data.contentManagement;
+					dataStr = data.managerManagement;
 				}
 				//重新渲染左侧菜单
 				tab.render();

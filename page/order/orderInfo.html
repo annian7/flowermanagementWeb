@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>商品信息</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../../layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="../../css/public.css" media="all" />
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body class="childrenBody" >
+<form class="layui-form layui-row">
+	<div class="layui-col-md6 layui-col-xs12">
+		<div class="layui-form-item">
+			<div class="layui-input-block">
+				<input type="hidden"  disabled class="layui-input layui-disabled id">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">店铺</label>
+			<div class="layui-input-block">
+				<input type="text"  disabled class="layui-input layui-disabled shop">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">商品名</label>
+			<div class="layui-input-block">
+				<input type="text"  disabled  lay-verify="required" class="layui-input layui-disabled commodity">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">操作人</label>
+			<div class="layui-input-block">
+				<input type="text"  disabled  lay-verify="emp" class="layui-input layui-disabled emp">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">单价</label>
+			<div class="layui-input-block">
+				<input type="tel" disabled lay-verify="price" class="layui-input layui-disabled price">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">总数量</label>
+			<div class="layui-input-block">
+				<input type="tel" disabled lay-verify="quantity" class="layui-input layui-disabled quantity">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">总价</label>
+			<div class="layui-input-block">
+				<input type="tel" disabled lay-verify="totalPrice" class="layui-input layui-disabled totalPrice">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">客户姓名</label>
+			<div class="layui-input-block">
+				<input type="tel" disabled lay-verify="name" class="layui-input layui-disabled name">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">电话</label>
+			<div class="layui-input-block">
+				<input type="tel" disabled lay-verify="tel" class="layui-input layui-disabled tel">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">地址</label>
+			<div class="layui-input-block">
+				<input type="tel" disabled lay-verify="address" class="layui-input layui-disabled address">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">备注</label>
+			<div class="layui-input-block">
+				<input type="tel" disabled lay-verify="remarks" class="layui-input layui-disabled remarks">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">下单时间</label>
+			<div class="layui-input-block">
+				<input type="tel" disabled lay-verify="saveDate" class="layui-input layui-disabled saveDate">
+			</div>
+		</div>
+
+	</div>
+</form>
+<script type="text/javascript" src="../../layui/layui.js"></script>
+<script type="text/javascript" src="orderInfo.js"></script>
+<script type="text/javascript" src="../../js/cacheUserInfo.js"></script>
+</body>
+</html>
