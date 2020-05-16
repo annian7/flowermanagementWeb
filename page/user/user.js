@@ -54,8 +54,13 @@ layui.use(['form','layer','laydate','table','laytpl'],function(){
                     dataType: "JSON",
                     success: function (data) {
                        if(data!=null){
-                           layer.msg("修改成功")
-                           sessionStorage.setItem("accountInfo",JSON.stringify(data));
+                        layer.msg("修改成功,请重新登录")
+                           window.top.location.href = "/page/login/login.html";
+                            window.sessionStorage.removeItem("menu");
+                            menu = [];
+                            window.sessionStorage.removeItem("curmenu");
+                            window.sessionStorage.removeItem("accountInfo");
+                            window.sessionStorage.removeItem("identity");
                        }
                     },
                     error: function (XMLHttpRequest, textStatus, errorThrow) {
@@ -81,8 +86,13 @@ layui.use(['form','layer','laydate','table','laytpl'],function(){
                     dataType: "JSON",
                     success: function (data) {
                        if(data!=null){
-                           layer.msg("修改成功")
-                           sessionStorage.setItem("accountInfo",JSON.stringify(data));
+                           layer.msg("修改成功,请重新登录")
+                           window.top.location.href = "/page/login/login.html";
+                            window.sessionStorage.removeItem("menu");
+                            menu = [];
+                            window.sessionStorage.removeItem("curmenu");
+                            window.sessionStorage.removeItem("accountInfo");
+                            window.sessionStorage.removeItem("identity");
                        }
                     },
                     error: function (XMLHttpRequest, textStatus, errorThrow) {
